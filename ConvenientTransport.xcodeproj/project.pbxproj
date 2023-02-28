@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9DE0494F04EC12EA01B8DC0A /* Pods_ConvenientTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406FC32845C796AFFA640A9E /* Pods_ConvenientTransport.framework */; };
+		BED1DB4229AE06E600EB61C9 /* DailyTrainTimetableStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1DB4129AE06E600EB61C9 /* DailyTrainTimetableStruct.swift */; };
+		BED1DB4429AE126500EB61C9 /* jso.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1DB4329AE126500EB61C9 /* jso.swift */; };
 		BEF8D1C129ADAD080096E2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1C029ADAD080096E2B2 /* AppDelegate.swift */; };
 		BEF8D1C329ADAD080096E2B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1C229ADAD080096E2B2 /* SceneDelegate.swift */; };
 		BEF8D1C529ADAD080096E2B2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1C429ADAD080096E2B2 /* HomeViewController.swift */; };
@@ -27,6 +29,8 @@
 		14D6EC4101E8E8979A52C0AE /* Pods-ConvenientTransport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientTransport.release.xcconfig"; path = "Target Support Files/Pods-ConvenientTransport/Pods-ConvenientTransport.release.xcconfig"; sourceTree = "<group>"; };
 		16F53B8CA699DB419047D629 /* Pods-ConvenientTransport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientTransport.debug.xcconfig"; path = "Target Support Files/Pods-ConvenientTransport/Pods-ConvenientTransport.debug.xcconfig"; sourceTree = "<group>"; };
 		406FC32845C796AFFA640A9E /* Pods_ConvenientTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvenientTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED1DB4129AE06E600EB61C9 /* DailyTrainTimetableStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTrainTimetableStruct.swift; sourceTree = "<group>"; };
+		BED1DB4329AE126500EB61C9 /* jso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jso.swift; sourceTree = "<group>"; };
 		BEF8D1BD29ADAD080096E2B2 /* ConvenientTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF8D1C029ADAD080096E2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF8D1C229ADAD080096E2B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				BEF8D1DC29ADB4CA0096E2B2 /* TokenStruct.swift */,
+				BED1DB4129AE06E600EB61C9 /* DailyTrainTimetableStruct.swift */,
+				BED1DB4329AE126500EB61C9 /* jso.swift */,
 			);
 			path = DataStruct;
 			sourceTree = "<group>";
@@ -284,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF8D1DD29ADB4CA0096E2B2 /* TokenStruct.swift in Sources */,
+				BED1DB4429AE126500EB61C9 /* jso.swift in Sources */,
 				BEF8D1E629ADE8C80096E2B2 /* HomeViewModel.swift in Sources */,
 				BEF8D1C529ADAD080096E2B2 /* HomeViewController.swift in Sources */,
+				BED1DB4229AE06E600EB61C9 /* DailyTrainTimetableStruct.swift in Sources */,
 				BEF8D1C129ADAD080096E2B2 /* AppDelegate.swift in Sources */,
 				BEF8D1E929ADF5660096E2B2 /* UserDefaultManager.swift in Sources */,
 				BEF8D1DA29ADB3410096E2B2 /* NetWorkUseCaseProtocol.swift in Sources */,
