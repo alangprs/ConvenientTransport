@@ -20,6 +20,7 @@
 		BEF8D1E129ADE1230096E2B2 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1E029ADE1230096E2B2 /* AlamofireAdapter.swift */; };
 		BEF8D1E429ADE8570096E2B2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1E329ADE8570096E2B2 /* Logger.swift */; };
 		BEF8D1E629ADE8C80096E2B2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1E529ADE8C80096E2B2 /* HomeViewModel.swift */; };
+		BEF8D1E929ADF5660096E2B2 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1E829ADF5660096E2B2 /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BEF8D1E029ADE1230096E2B2 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		BEF8D1E329ADE8570096E2B2 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		BEF8D1E529ADE8C80096E2B2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BEF8D1E829ADF5660096E2B2 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		BEF8D1BF29ADAD080096E2B2 /* ConvenientTransport */ = {
 			isa = PBXGroup;
 			children = (
+				BEF8D1E729ADF5430096E2B2 /* UserDefaultManager */,
 				BEF8D1E229ADE84F0096E2B2 /* Logger */,
 				BEF8D1DE29ADE0EC0096E2B2 /* Adapter */,
 				BEF8D1DB29ADB4B00096E2B2 /* DataStruct */,
@@ -147,6 +150,14 @@
 				BEF8D1E329ADE8570096E2B2 /* Logger.swift */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		BEF8D1E729ADF5430096E2B2 /* UserDefaultManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8D1E829ADF5660096E2B2 /* UserDefaultManager.swift */,
+			);
+			path = UserDefaultManager;
 			sourceTree = "<group>";
 		};
 		E23EE9C65D8D79D5042BA177 /* Frameworks */ = {
@@ -276,6 +287,7 @@
 				BEF8D1E629ADE8C80096E2B2 /* HomeViewModel.swift in Sources */,
 				BEF8D1C529ADAD080096E2B2 /* HomeViewController.swift in Sources */,
 				BEF8D1C129ADAD080096E2B2 /* AppDelegate.swift in Sources */,
+				BEF8D1E929ADF5660096E2B2 /* UserDefaultManager.swift in Sources */,
 				BEF8D1DA29ADB3410096E2B2 /* NetWorkUseCaseProtocol.swift in Sources */,
 				BEF8D1D829ADB2B70096E2B2 /* GetTokenUesCase.swift in Sources */,
 				BEF8D1E129ADE1230096E2B2 /* AlamofireAdapter.swift in Sources */,
