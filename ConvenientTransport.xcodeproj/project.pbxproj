@@ -14,6 +14,12 @@
 		BEF8D1C829ADAD080096E2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF8D1C629ADAD080096E2B2 /* Main.storyboard */; };
 		BEF8D1CA29ADAD090096E2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF8D1C929ADAD090096E2B2 /* Assets.xcassets */; };
 		BEF8D1CD29ADAD090096E2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF8D1CB29ADAD090096E2B2 /* LaunchScreen.storyboard */; };
+		BEF8D1D829ADB2B70096E2B2 /* GetTokenUesCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1D729ADB2B70096E2B2 /* GetTokenUesCase.swift */; };
+		BEF8D1DA29ADB3410096E2B2 /* NetWorkUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1D929ADB3410096E2B2 /* NetWorkUseCaseProtocol.swift */; };
+		BEF8D1DD29ADB4CA0096E2B2 /* TokenStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1DC29ADB4CA0096E2B2 /* TokenStruct.swift */; };
+		BEF8D1E129ADE1230096E2B2 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1E029ADE1230096E2B2 /* AlamofireAdapter.swift */; };
+		BEF8D1E429ADE8570096E2B2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1E329ADE8570096E2B2 /* Logger.swift */; };
+		BEF8D1E629ADE8C80096E2B2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1E529ADE8C80096E2B2 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		BEF8D1C929ADAD090096E2B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEF8D1CC29ADAD090096E2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEF8D1CE29ADAD090096E2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF8D1D729ADB2B70096E2B2 /* GetTokenUesCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTokenUesCase.swift; sourceTree = "<group>"; };
+		BEF8D1D929ADB3410096E2B2 /* NetWorkUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkUseCaseProtocol.swift; sourceTree = "<group>"; };
+		BEF8D1DC29ADB4CA0096E2B2 /* TokenStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStruct.swift; sourceTree = "<group>"; };
+		BEF8D1E029ADE1230096E2B2 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		BEF8D1E329ADE8570096E2B2 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BEF8D1E529ADE8C80096E2B2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,10 @@
 		BEF8D1BF29ADAD080096E2B2 /* ConvenientTransport */ = {
 			isa = PBXGroup;
 			children = (
+				BEF8D1E229ADE84F0096E2B2 /* Logger */,
+				BEF8D1DE29ADE0EC0096E2B2 /* Adapter */,
+				BEF8D1DB29ADB4B00096E2B2 /* DataStruct */,
+				BEF8D1D629ADB29B0096E2B2 /* NetworkUseCase */,
 				BEF8D1D429ADB1770096E2B2 /* ViewController */,
 				BEF8D1C029ADAD080096E2B2 /* AppDelegate.swift */,
 				BEF8D1C229ADAD080096E2B2 /* SceneDelegate.swift */,
@@ -95,8 +111,42 @@
 			isa = PBXGroup;
 			children = (
 				BEF8D1C429ADAD080096E2B2 /* HomeViewController.swift */,
+				BEF8D1E529ADE8C80096E2B2 /* HomeViewModel.swift */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		BEF8D1D629ADB29B0096E2B2 /* NetworkUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8D1D729ADB2B70096E2B2 /* GetTokenUesCase.swift */,
+				BEF8D1D929ADB3410096E2B2 /* NetWorkUseCaseProtocol.swift */,
+			);
+			path = NetworkUseCase;
+			sourceTree = "<group>";
+		};
+		BEF8D1DB29ADB4B00096E2B2 /* DataStruct */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8D1DC29ADB4CA0096E2B2 /* TokenStruct.swift */,
+			);
+			path = DataStruct;
+			sourceTree = "<group>";
+		};
+		BEF8D1DE29ADE0EC0096E2B2 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8D1E029ADE1230096E2B2 /* AlamofireAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		BEF8D1E229ADE84F0096E2B2 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8D1E329ADE8570096E2B2 /* Logger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		E23EE9C65D8D79D5042BA177 /* Frameworks */ = {
@@ -222,9 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF8D1DD29ADB4CA0096E2B2 /* TokenStruct.swift in Sources */,
+				BEF8D1E629ADE8C80096E2B2 /* HomeViewModel.swift in Sources */,
 				BEF8D1C529ADAD080096E2B2 /* HomeViewController.swift in Sources */,
 				BEF8D1C129ADAD080096E2B2 /* AppDelegate.swift in Sources */,
+				BEF8D1DA29ADB3410096E2B2 /* NetWorkUseCaseProtocol.swift in Sources */,
+				BEF8D1D829ADB2B70096E2B2 /* GetTokenUesCase.swift in Sources */,
+				BEF8D1E129ADE1230096E2B2 /* AlamofireAdapter.swift in Sources */,
 				BEF8D1C329ADAD080096E2B2 /* SceneDelegate.swift in Sources */,
+				BEF8D1E429ADE8570096E2B2 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
