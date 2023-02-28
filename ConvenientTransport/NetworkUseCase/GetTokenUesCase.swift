@@ -33,6 +33,7 @@ class GetTokenUesCase: NetWorkUseCaseProtocol {
             if let data = data {
                 do {
                     let assetsCheck = try JSONDecoder().decode(TokenStruct.self, from: data)
+                    self.storeToken(token: assetsCheck.accessToken)
                     completion(.success(assetsCheck))
                 } catch {
                     completion(.failure(error))
@@ -43,6 +44,10 @@ class GetTokenUesCase: NetWorkUseCaseProtocol {
             }
             
         }
+    }
+    
+    private func storeToken(token: String) {
+        UserDefaultManager.shared.storeData(value: token, at: .token)
     }
     
 }
