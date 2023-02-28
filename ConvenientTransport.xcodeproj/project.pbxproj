@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DE0494F04EC12EA01B8DC0A /* Pods_ConvenientTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406FC32845C796AFFA640A9E /* Pods_ConvenientTransport.framework */; };
 		BEF8D1C129ADAD080096E2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1C029ADAD080096E2B2 /* AppDelegate.swift */; };
 		BEF8D1C329ADAD080096E2B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1C229ADAD080096E2B2 /* SceneDelegate.swift */; };
 		BEF8D1C529ADAD080096E2B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8D1C429ADAD080096E2B2 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14D6EC4101E8E8979A52C0AE /* Pods-ConvenientTransport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientTransport.release.xcconfig"; path = "Target Support Files/Pods-ConvenientTransport/Pods-ConvenientTransport.release.xcconfig"; sourceTree = "<group>"; };
+		16F53B8CA699DB419047D629 /* Pods-ConvenientTransport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenientTransport.debug.xcconfig"; path = "Target Support Files/Pods-ConvenientTransport/Pods-ConvenientTransport.debug.xcconfig"; sourceTree = "<group>"; };
+		406FC32845C796AFFA640A9E /* Pods_ConvenientTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvenientTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF8D1BD29ADAD080096E2B2 /* ConvenientTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF8D1C029ADAD080096E2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF8D1C229ADAD080096E2B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE0494F04EC12EA01B8DC0A /* Pods_ConvenientTransport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CE6E92AEB27E3501454C7AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16F53B8CA699DB419047D629 /* Pods-ConvenientTransport.debug.xcconfig */,
+				14D6EC4101E8E8979A52C0AE /* Pods-ConvenientTransport.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BEF8D1B429ADAD080096E2B2 = {
 			isa = PBXGroup;
 			children = (
 				BEF8D1BF29ADAD080096E2B2 /* ConvenientTransport */,
 				BEF8D1BE29ADAD080096E2B2 /* Products */,
+				3CE6E92AEB27E3501454C7AD /* Pods */,
+				E23EE9C65D8D79D5042BA177 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = ConvenientTransport;
 			sourceTree = "<group>";
 		};
+		E23EE9C65D8D79D5042BA177 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406FC32845C796AFFA640A9E /* Pods_ConvenientTransport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEF8D1D129ADAD090096E2B2 /* Build configuration list for PBXNativeTarget "ConvenientTransport" */;
 			buildPhases = (
+				926D5FA7CB7E0ED508D3264B /* [CP] Check Pods Manifest.lock */,
 				BEF8D1B929ADAD080096E2B2 /* Sources */,
 				BEF8D1BA29ADAD080096E2B2 /* Frameworks */,
 				BEF8D1BB29ADAD080096E2B2 /* Resources */,
+				B423C7AEA286A1D33C69FD2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		926D5FA7CB7E0ED508D3264B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConvenientTransport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B423C7AEA286A1D33C69FD2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvenientTransport/Pods-ConvenientTransport-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvenientTransport/Pods-ConvenientTransport-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConvenientTransport/Pods-ConvenientTransport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEF8D1B929ADAD080096E2B2 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		BEF8D1D229ADAD090096E2B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F53B8CA699DB419047D629 /* Pods-ConvenientTransport.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		BEF8D1D329ADAD090096E2B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D6EC4101E8E8979A52C0AE /* Pods-ConvenientTransport.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
